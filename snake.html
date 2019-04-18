@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/snake.css">
+  <link rel="stylesheet" href="css/flipclock.css">
+  <link href="fonts/comfortaa.css" rel="stylesheet">
+  <link href="fonts/inconsolata.css" rel="stylesheet">
+  <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+  <title>Котозмей!</title>
+</head>
+<body>
+<a class="main" href="https://vk.com/i_vovani">Суперзмеюкаподготовюка:3</a>
+
+<div class="modalQuestion2Level">
+    <div class="modalWindow">
+      <div class="close" id="closeBtn"><img src="images/close-button.svg" alt=""></div>
+      <div class="question">Для какого из приведённых значений числа X истинно высказывание: (X < 7) И НЕ (X < 6)? </div>
+      <div class="boxes">
+        <div class="answer">
+        <label class="label" id="firstInp" data-checked="false"><input type="radio"  name="question" class="question">4</label>
+        <label class="label" id="secondInp" data-checked="false"><input type="radio" name="question" class="question">5</label>
+        <label class="label" id="thirdInp" data-checked="false"><input type="radio"  name="question" class="question">6</label>
+        <label class="label" id="fourthInp" data-checked="false"><input type="radio" name="question" class="question">7</label>
+      </div>
+      <img class="level-2-img" src="images/forSnakeSvg2/014-global-network.svg" alt="">
+      </div>
+    </div>
+  </div>
+<div class="modalQuestionMan">
+  <div class="modalWindowMan">
+    <div class="dialogueWind">
+      <div class="dialogue">
+            <p class="text1">
+              Штош,поздравляю!<br>Ты прошел дальше!<br>Дальше сложнее,юный подаван!
+            </p>
+        </div>
+        <img src="images/talking-man.svg" alt="">
+      </div>
+    <span id="nextBtn" class="span">Дальше<img src="images/next.svg" alt=""></span>
+    <span id="nextBtn1" class="span">Дальше<img src="images/next.svg" alt=""></span>
+    <span id="nextBtn2" class="span">Поехали!<img src="images/next.svg" alt=""></span>
+  </div>
+</div>
+<div class="modalQuestionManStart">
+  <div class="modalWindowManStart">
+    <div class="dialogueWindStart">
+      <div class="dialogueStart">
+            <p class="textStart">
+              Здравствуй,странник!<br>Меня зовут Сашка.<br>Я так понимаю,ты собираещься сдавать ОГЭ,раз зашел сюда.<br>Штош,желаю тебе удачи!<br>Только не забудь ввести свое имя.
+            </p>
+        </div>
+        <img src="images/boyStart.svg" alt="">
+      </div>
+      <input type="text" id="name"  placeholder="Введи сюда свое имя!">
+    <span id="startBtn" class="span">Йа готов:3<img src="images/next.svg" alt=""></span>
+  </div>
+</div>
+<div class="modal-Question-Programming">
+  <div class="user-Dialog">
+    <div class="close" id="closeBtnProg"><img src="images/close-button.svg" alt=""></div>
+    <h1 class="h1Code">Time to code!</h1>
+    <div class="textingMan">
+      <p class="codePole">
+          В программе «:=» обозначает оператор присваивания, знаки «+», «-», «*» и «/» — соответственно операции сложения, вычитания, умножения и деления. Правила выполнения операций и порядок действий соответствуют правилам арифметики. Определите значение переменной <span>a</span> после выполнения алгоритма:
+          <br><br>
+          <code>
+          <span>a</span> := 5  <br>
+          <span>b</span> := 4 <br>
+          <span>b</span> := 100 - <span>a</span>*<span>b</span> <br>
+          <span>a</span> := <span>b</span>/16*<span>a</span> <br>
+          </code>
+          <br>
+          В ответе укажите одно целое число — значение переменной <span>a</span>.
+      </p>
+      <img class="program-img" src="images/forSnakeSvg2/005-binary-code.svg" alt="">
+    </div>
+    <input id="programQuest" type="text" class="input1" placeholder="Здесь должен быть твой ответ">
+    <div class="span-block">
+      <span id="span1" class="span">Ответить!<img src="images/next.svg" alt=""></span>
+    </div>
+  </div>
+</div>
+<div class="modes">
+  <div class="mode1" id="mode1"><img src="images/tree.svg" alt=""></div>
+  <div class="mode1" id="mode2"><img src="images/stone.svg" alt=""></div>
+</div>
+<div class="modal-lose">
+  <div class="modal-lose-dialog">
+      <h1></h1>
+      <div class="btn-container">
+              <input type="submit" value="Заново?" id="button-blue"/>
+              <div class="ease"></div>
+          </div>
+  </div>
+</div>
+<div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
+    </div >
+<div class="background-decision">
+  <div class="decision-block">
+        <h1>Сложный выбор!</h1>
+        <p>Штош,теперь перед тобой стоит выбор:астанавицо или пойти дальше!<br>Сделай правильный выбор!<br>У тебя минутка для ответа!</p>
+      <div class="button-block">
+        <span class="span" id="end-btn">Астанавиться!<img src="images/next.svg" alt=""></span>
+        <span class="span" id="super-quest-btn">Супервопрос!<img src="images/next.svg" alt=""></span>
+      </div>
+  </div>
+</div>
+<div class="super-question-background">
+  <div class="super-question">
+    <h1>Супервопрос!</h1>
+    <img src="images/task1.jpg" id="super-img"alt="">
+    <input type="text" id="super"  placeholder="Введи сюда свой ответ!">
+      <span class="span" id="super-answ">Ответить!<img src="images/next.svg" alt=""></span>
+  </div>
+  <div class="clock-container">
+    <div class="clock"></div>
+  </div>
+</div>
+<div class="end-game-background">
+  <div class="end-game-window">
+    <h1>Рекомендации</h1>
+    <p>
+      <span class="mistakes">Количество ваших ошибок:</span><br>
+      <span class="mark">Вы получили оценку:</span><br>
+      <span class="recommendations"></span><br>
+      <span class="super-check"></span>
+    </p>
+    <span class="span" id="confirmation">Подтвердить!<img src="images/next.svg" alt=""></span>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/flipclock.min.js"></script>
+<script src="js/snake1Level.js" ></script>
+<script src="js/snake2Level.js" async></script>
+</body>
+</html>
